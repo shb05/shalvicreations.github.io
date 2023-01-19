@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home - Women's Collection by Shalvi Creation</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="load.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="icon" href="logo_title.png" type="image/x-icon">
+    </head>
+    <body>
+    
+    <!--loader-->
+    <div class="loader_bg">
+        <div class="loader"></div>
+    </div>  
+        
+
+    <section class="header">
+        <nav>
+            <a href="home.html"><img src="logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="shop.html">PRODUCTS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>Women's Collection by Shalvi Creation</h1>
+            <p>Stay Trendy Feel Authentic</p>
+            <a href="#know" class="hero-btn">Know More About Us</a>
+        </div>
+
+    </section>
+    
+
+    <!--Work-->
+
+
+    <!--Services-->
+    <div class="bggrey">
+    <section class="services">
+        <br><br>
+        <h1>Our Products</h1>
+
+        <div class="row">
+            <div class="services-col">
+                <img src="home\saree.jpg">
+                <div class="layer">
+                    <h4>SAREES</h4>
+                </div>
+            </div>
+
+            <div class="services-col">
+                <img src="home\kurti.jpg">
+                <div class="layer">
+                    <h4>KURTIS</h4>
+                </div>
+            </div>
+
+            <div class="services-col">
+                <img src="home\kurtaset.jpg">
+                <div class="layer">
+                    <h4>KURTI SET</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="services-col">
+                <img src="home\lehenga.jpg">
+                <div class="layer">
+                    <h4>LEHENGAS</h4>
+                </div>
+            </div>
+
+            <div class="services-col">
+                <img src="home\jeans.png">
+                <div class="layer">
+                    <h4>JEANS</h4>       
+                </div>
+            </div>
+
+            <div class="services-col">
+                <img src="home\jewellery.jpg">
+                <div class="layer">
+                    <h4>JEWELLERY</h4>                   
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <br><br>
+    </section>
+
+</div>
+
+    <!--contact-->
+
+    <section class="cta">
+        <h1>Contact Us</h1>
+        <a href="contact.html" class="hero-btn">CONTACT US</a>
+    </section>
+
+    <!--TOP-->
+    <button id="btnScrollToTop">
+        <i class="material-icons">arrow_upward</i>
+    </button>
+
+    <!--footer-->
+
+    <section class="footer">
+        <br>
+        <h4>Shalvi Creation</h4>
+        <p>
+            We Deal in all types of Kurtis, Kurta Sets, Tunics, Tops, Plazzos, Pants & One Piece Dresses
+        </p>
+        <div class="icons">
+            <a href="https://wa.me/919958050025/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="tel: +917011455284" target="_blank"><i class="fa fa-phone"></i></a>
+            <a href="https://www.instagram.com/shalvi.creation/" target="_blank"><i class="fa fa-instagram"></i></a>
+        </div>
+        <p>All Rights Reserved | By Shalvi Creation 
+            <i class="fa fa-copyright"></i></p>
+    </section>
+    </section>
+
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+
+        //responsive menu
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+        //top-btn
+            const btnScrollToTop = document.querySelector("#btnScrollToTop");
+
+            btnScrollToTop.addEventListener("click", backToTop);
+
+            function backToTop() {
+                window.scrollTo(0,0);
+            }
+        
+        //loader
+        setTimeout(function(){
+            $('.loader_bg').fadeToggle();
+        }, 1500);
+
+    </script>
+
+</body>
+</html>

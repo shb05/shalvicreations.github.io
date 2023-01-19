@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us - Women's Collection by Shalvi Creation</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="load.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="icon" href="logo_title.png" type="image/x-icon">
+    </head> 
+    <body>
+
+       
+
+        <section class="cont">
+            <nav>
+                <a href="home.html"><img src="logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="shop.html">PRODUCTS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1 style="font-size: 55px;">Contact Us</h1>
+        </section>
+        
+
+        <!--Contact-->
+        
+        <section class="contact-us">
+
+            <div class="row">
+                <div class="contact-col">
+                    <div>
+                        <i class="fa fa-home"></i>
+                        <span>
+                            <br><br><br>
+                            <h5>House No. 7, HBC Basement, Sector 10 HBC,</h5>
+                            <p>Faridabad, Haryana - 121006</p>
+                        </span>
+                    </div>
+
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <span>
+                            <h5>+91 - 7011455284</h5>
+                            <p>Monday to Sunday, 9:30AM to 9:30PM</p>
+                        </span>
+                    </div>
+
+                    <div>
+                        <i class="fa fa-envelope-o"></i>
+                        <span>
+                            <h5>shalvicreationsfbd@gmail.com</h5>
+                            <p>Mail us your queries, We will reach you soon.</p>
+                        </span>
+                    </div>
+
+                </div>
+                <div class="cont-img">
+                    <img src="cont-img.png" title="Women's Collection">
+                </div>
+            </div>
+            
+        </section>
+
+
+        <section class="location">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d219.41322489361002!2d77.32767579070196!3d28.
+            370589976168905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cdd556a480b77%3A0xc4547a2a2364fa0a!2sWomen
+            %E2%80%99s%20Collection!5e0!3m2!1sen!2sin!4v1666775519621!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+
+        </section>
+
+        <!--TOP-->
+        <button id="btnScrollToTop">
+            <i class="material-icons">arrow_upward</i>
+        </button>
+
+
+
+        <!--footer-->
+
+        <section class="footer">
+            <br>
+            <h4>Shalvi Creation</h4>
+            <p>
+                We Deal in all types of Kurtis, Kurta Sets, Tunics, Tops, Plazzos, Pants & One Piece Dresses
+            </p>
+            <div class="icons">
+                <a href="https://wa.me/919958050025/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="tel: +917011455284" target="_blank"><i class="fa fa-phone"></i></a>
+                <a href="https://www.instagram.com/shalvi.creation/" target="_blank"><i class="fa fa-instagram"></i></a>
+            </div>
+            <p>All Rights Reserved | By Shalvi Creation 
+                <i class="fa fa-copyright"></i></p>
+        </section>
+        
+
+        <script>
+
+            //responsive menu
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+
+            //top-btn
+            const btnScrollToTop = document.querySelector("#btnScrollToTop");
+
+            btnScrollToTop.addEventListener("click", backToTop);
+
+            function backToTop() {
+                window.scrollTo(0,0);
+            }
+
+
+        </script>
+    
+    </body>
+</html>
